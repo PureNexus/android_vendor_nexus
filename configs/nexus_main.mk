@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Scripts 
+SQUISHER_SCRIPT := vendor/nexus/tools/squisher
+
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/common
