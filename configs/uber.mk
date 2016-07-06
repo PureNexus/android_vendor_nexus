@@ -70,9 +70,9 @@ ADDITIONAL_BUILD_PROPERTIES += \
 
 # AARCH64 KERNEL TOOLCHAIN INFO
 ifneq ($(TARGET_GCC_VERSION_ARM64),)
-  UBER_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/aarch64/aarch64-linux-android-$(TARGET_GCC_VERSION_ARM64)
+  UBER_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/aarch64/aarch64-linux-android-$(TARGET_GCC_VERSION_ARM64)-kernel
 else
-  UBER_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/aarch64/aarch64-linux-android-4.9
+  UBER_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/aarch64/aarch64-linux-android-4.9-kernel
 endif
 UBER_TC_VERSION := $(shell $(UBER_TC_PATH)/bin/aarch64-linux-android-gcc --version)
 UBER_TC_VERSION_NUMBER := $(shell $(UBER_TC_PATH)/bin/aarch64-linux-android-gcc -dumpversion 2>&1)
