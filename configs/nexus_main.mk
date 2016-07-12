@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
 
 #Custom Packages
 PRODUCT_PACKAGES += \
-    LockClock
+    LockClock \
+    masquerade
 
 # Busybox
 PRODUCT_PACKAGES += \
