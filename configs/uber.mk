@@ -79,6 +79,8 @@ UBER_TC_VERSION_NUMBER := $(shell $(UBER_TC_PATH)/bin/aarch64-linux-android-gcc 
 UBER_TC_DATE := $(filter 20150% 20151% 20160% 20161%,$(UBER_TC_VERSION))
 ifneq ($(filter (UBERTC%),$(UBER_TC_VERSION)),)
   UBER_TC_NAME := UBERTC
+else ifneq ($(filter (Linaro%),$(UBER_TC_VERSION)),)
+  UBER_TC_NAME := LINARO
 else
   UBER_TC_NAME := GCC
 endif
